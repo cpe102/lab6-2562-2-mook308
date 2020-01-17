@@ -3,6 +3,23 @@ using namespace std;
 
 char before(char x){
 	//Write your function definition here
+	char ans;
+	if(x>'Z' || x<'A'){
+		ans=48;
+		return ans;
+	}
+	x = x-1;
+		if(x<65){
+			ans = x+26;
+			return ans;
+		}else{
+			ans = x;
+			return ans;
+		}
+
+
+
+
 }
 
 int main(){
